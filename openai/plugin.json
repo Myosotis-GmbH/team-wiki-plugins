@@ -1,0 +1,25 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "team-wiki",
+  "version": "0.1.0",
+  "description": "Build and maintain a collaborative LLM wiki for each team in a dedicated Confluence space.",
+  "author": {
+    "name": "Plugin owner"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Team Wiki",
+        "shortDescription": "Shared team knowledge, maintained in Confluence",
+        "longDescription": "Turn curated sources into linked, cited team knowledge in Confluence. Set up a dedicated space per team, ingest evidence, answer questions, review changes, and maintain wiki health while preserving human contributions.",
+        "developerName": "Plugin owner",
+        "category": "Productivity",
+        "capabilities": [
+          "Interactive"
+        ],
+        "defaultPrompt": "Help set up Team Wiki for my team in a dedicated Confluence space."
+      },
+      "apps": "./.app.json"
+    }
+  }
+}
