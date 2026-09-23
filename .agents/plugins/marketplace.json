@@ -1,0 +1,20 @@
+{
+  "name": "team-wiki-plugins",
+  "interface": {
+    "displayName": "Team Wiki Plugins"
+  },
+  "plugins": [
+    {
+      "name": "team-wiki",
+      "source": {
+        "source": "local",
+        "path": "./openai"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

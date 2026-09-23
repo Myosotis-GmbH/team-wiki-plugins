@@ -2,6 +2,22 @@
 
 A shared Confluence wiki maintained through five skills: setup, ingest, ask, review, and maintain. The plugin requires the Atlassian app declared in `.app.json`.
 
+## Install in Codex
+
+In **Add plugin marketplace**, enter:
+
+| Field | Value |
+| --- | --- |
+| Source | `Myosotis-GmbH/team-wiki-plugins` |
+| Git ref | A branch or tag containing the marketplace catalog |
+| Sparse paths | Leave blank |
+
+Select **Add marketplace**, then install **Team Wiki** from **Team Wiki Plugins** and connect the Atlassian app when prompted. Start a new task to use the skills.
+
+For local development, set **Source** to the absolute repository root and leave **Git ref** and **Sparse paths** blank. Local changes are available without pushing them first. Git sources only include committed, pushed changes at the selected ref.
+
+The repository catalog at `.agents/plugins/marketplace.json` points to `./openai`, relative to the repository root. If using sparse checkout, include both `.agents/plugins` and `openai`. See [OpenAI marketplace documentation](https://developers.openai.com/plugins/build/plugins).
+
 ## Use
 
 - "Set up a shared wiki in Confluence space ENG."
