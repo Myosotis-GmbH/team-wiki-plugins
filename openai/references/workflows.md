@@ -1,0 +1,44 @@
+# Shared wiki workflows
+
+Read the operating contract first, then the section for the requested task. Apply the same workflow from either platform.
+
+## Setup
+
+1. Resolve the domain/team and target root or space. An existing space is sufficient; create a space only when explicitly requested and supported. Inspect for either plugin's existing root and rules before creating anything. Resolve ambiguous candidates with the user.
+2. Read existing rules and map section/category page IDs using the contract's aliases. Reuse pages and human conventions. Initialize missing structure only as needed; create useful categories rather than empty scaffolding. Keep a running setup record and search before retrying uncertain creates.
+3. Record the binding, schema version, source conventions, review policy, and known stewards in Rules. Default to factual additions with review for disputed, policy, decision, or substantive human changes. Preserve stricter team rules. Do not change permissions implicitly.
+4. Populate Home and Index with verified links and quick-start examples: ingest a source, ask the wiki, review a proposal, check wiki health. Explain that contributors supply evidence and corrections, the agent maintains synthesis, and stewards resolve disputes. Review states are conventions, not enforced permissions.
+5. Return the root/rules URLs and any incomplete steps. Offer to save `Confluence wiki: <root URL>` in the project's instructions so future tasks find the same wiki; save it only when requested. Shared configuration stays in Confluence.
+
+## Ingest
+
+1. Read Rules, Index, relevant knowledge pages, and the supplied source. Process bounded batches, and identify unreadable content, missing attachments, or partial transcripts. Check audience compatibility before creating records or proposals.
+2. Derive the canonical source identity and version/fingerprint. Check Sources and Activity, including legacy logs, for prior ingestion. A verified unchanged completed ingest is a no-op; a partial one resumes; a changed source gets a new record. If identity or completion is uncertain, inspect evidence before deciding. Never manufacture completion from a source record's existence.
+3. Extract factual claims, entities, concepts, adopted decisions, open questions, and contradictions with precise evidence locators. Compare with existing claims. Distinguish participant proposals from decisions and model inference from source statements. Discuss material ambiguity with the user; batch or hands-off requests need no routine takeaway confirmation.
+4. Plan source records and all relevant knowledge changes, with summaries, citations, related links, and visible contradictions. Match existing categories and terminology. Avoid isolated source summaries and unnecessary one-claim pages; do not impose a page-count target. Preserve Human notes.
+5. Route disputed, high-impact, or review-first knowledge changes into exact review proposals. Keep competing evidence visible without declaring a winner. A completed ingest may have pending reviews, but must report that the proposals remain unapplied.
+6. Create or resume the operation record, then perform guarded sequential writes: immutable source record, authorized factual changes/proposals, cross-links, Index, and final Activity status. Journal actual returned page IDs. On failure, retain partial status and precise resume instructions; do not create canonical claims whose required source record failed.
+7. Return links to source records, created/updated pages, and proposals, with pending or uncertain steps. Report an already-completed ingest as unchanged.
+
+## Ask
+
+1. Read Rules and Index, retrieve relevant knowledge pages and source records, and follow useful cross-links. Search only the bound subtree; read full passages supporting material claims.
+2. Answer directly with exact supporting page/source links. Separate established facts, contested claims, inference, and unknowns. Include source dates when freshness matters. Prefer accumulated synthesis; check underlying evidence for critical or conflicting claims. If evidence is missing, explain the gap rather than asserting no answer exists.
+3. Do not write pages or query logs for ordinary questions. If the answer is a reusable analysis or connection, offer to save it without making approval a condition of answering. On requested or explicitly configured writeback, create/update a Synthesis (or legacy Analyses) page with provenance and related links under the contract's review policy; update Index and Activity. Label new reasoning as inference.
+4. For authorized cross-wiki questions, bind each root separately and preserve audience restrictions when answering or saving the result.
+
+## Review
+
+1. Read the requested proposal, exact deltas, sources, current affected pages, Rules, and approval information. Assess evidence, contradictions, human text affected, and outstanding decisions. Assessment alone is read-only.
+2. Determine whether the request is assessment, revision, rejection, or application. Verify configured reviewer authority and explicit approval for gated changes. If authority is unknown, leave a fully drafted proposal pending; do not infer it from write access. For an authorized revision or rejection, guarded-edit the proposal and record the operation without applying its knowledge changes. A material revision returns it to open and requires fresh approval; preserve prior approval/rejection evidence.
+3. Before applying, compare current pages with proposal base versions. Reconcile non-overlapping changes while preserving human edits. If meaning or evidence changed, return the revised proposal for review; stale approval does not authorize a different claim.
+4. Apply guarded changes under an operation ID and verify each result. If application is interrupted, preserve its current approval state and record partial application with completed/pending steps in the proposal and Activity; resume without replaying completed edits.
+5. Verify knowledge changes and Index updates before marking the proposal applied, then finalize Activity with the verified approver and approval evidence. Return applied-page links and unresolved decisions. Preserve rejected/superseded proposals and dissent.
+
+## Maintain
+
+1. Resolve scan scope, read Rules and Index, and enumerate the bound subtree with pagination. State coverage and inaccessible content. Use configured freshness thresholds; otherwise report evidence ages without inventing expiration rules.
+2. Check contradictions, stale evidence, missing citations, broken links, unindexed/orphan pages, duplicate entities/sources, unresolved reviews, and partial operations. Distinguish inaccessible links from proven broken links, and state the inspected set when checking inbound links.
+3. Prioritize findings with page links, evidence, and concrete repairs. Suggest useful missing topics, questions, and sources; fetch outside sources only when within the request.
+4. A health check is read-only, including its log. When repairs are requested, fix navigation/citation issues with guarded edits, resume partial operations, and route disputed facts or substantive human changes through Reviews. Do not automatically delete, archive, rename, or merge distinct work.
+5. Publish a dated report and Activity record only when requested. Separate repaired, pending, and unverified items. Never claim periodic scans are active without a verified schedule.

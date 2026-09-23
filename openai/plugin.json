@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "team-wiki",
-  "version": "0.1.0",
-  "description": "Build and maintain a collaborative LLM wiki for each team in a dedicated Confluence space.",
+  "version": "0.2.0",
+  "description": "Build and maintain a collaborative LLM wiki for each team under a shared Confluence root.",
   "author": {
     "name": "Plugin owner"
   },
@@ -17,7 +17,7 @@
         "capabilities": [
           "Interactive"
         ],
-        "defaultPrompt": "Help set up Team Wiki for my team in a dedicated Confluence space."
+        "defaultPrompt": "Help set up Team Wiki for my team in Confluence, reusing an existing wiki when available."
       },
       "apps": "./.app.json"
     }

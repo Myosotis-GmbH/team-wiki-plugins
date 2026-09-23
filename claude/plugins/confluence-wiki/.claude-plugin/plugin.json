@@ -1,6 +1,6 @@
 {
   "name": "confluence-wiki",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Team-shared LLM wiki (Karpathy's LLM Wiki pattern) stored in Confluence via the official Atlassian MCP server.",
   "author": { "name": "Lennart", "email": "ped-claude-1@myo.de" },
   "keywords": ["confluence", "atlassian", "wiki", "knowledge-base", "llm-wiki"]
