@@ -12,7 +12,7 @@
   },
   "apps": "./.app.json",
   "name": "team-wiki",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Build and maintain a collaborative LLM wiki for each team under a shared Confluence root.",
   "author": {
     "name": "Plugin owner"
