@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stuck with Confluence? · myo</title>
+<meta name="description" content="A Claude plugin that writes, maintains and reads your Confluence wiki, so nobody else has to.">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root { --cyan: #14b2bc; --mint: #21f8c8; --ink: #2d3940; --muted: #60818c; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: flex; flex-direction: column;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif; color: var(--ink);
+    background: radial-gradient(60rem 40rem at 85% -10%, #d9fbf3 0, transparent 60%),
+                radial-gradient(50rem 40rem at -10% 110%, #dff4f7 0, transparent 60%), #fff;
+    padding-inline: 1.25rem;
+  }
+  header, main, footer { width: 100%; max-width: 60rem; margin-inline: auto; }
+  header { padding-block: 1.5rem; }
+  header img { height: 4.5rem; display: block; }
+  main { flex: 1; display: flex; flex-direction: column; justify-content: center; padding-block: 3rem 5rem; }
+  .eyebrow { color: var(--cyan); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: .8rem; margin: 0 0 1rem; }
+  h1 { font-size: clamp(2.5rem, 8vw, 5rem); font-weight: 800; line-height: 1.05; margin: 0 0 1.5rem; letter-spacing: -.02em; }
+  h1 span { background: linear-gradient(90deg, var(--cyan), var(--mint)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .lede { font-size: clamp(1.1rem, 2.5vw, 1.35rem); line-height: 1.6; color: var(--muted); max-width: 38rem; margin: 0 0 2.5rem; }
+  .lede strong { color: var(--ink); }
+  .ctas { display: flex; flex-wrap: wrap; gap: .75rem; }
+  .cta.alt { background: #fff; color: var(--cyan); box-shadow: inset 0 0 0 2px var(--cyan); }
+  .cta {
+    display: inline-flex; align-items: center; gap: .6rem;
+    background: var(--cyan); color: #fff; text-decoration: none; font-weight: 600; font-size: 1.1rem;
+    padding: 1rem 1.75rem; border-radius: 999px; box-shadow: 0 10px 30px -10px var(--cyan);
+    transition: transform .15s, box-shadow .15s;
+  }
+  .cta:hover { transform: translateY(-2px); box-shadow: 0 14px 34px -10px var(--cyan); }
+  .cta.alt:hover { box-shadow: inset 0 0 0 2px var(--cyan), 0 14px 34px -10px var(--cyan); }
+  .cta:focus-visible { outline: 3px solid var(--mint); outline-offset: 3px; }
+  .fine { margin: 1rem 0 0; font-size: .85rem; color: var(--muted); }
+  footer { padding-block: 1.5rem; font-size: .85rem; color: var(--muted); }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+<header>
+  <a href="https://myo.de"><img src="logo.png" alt="myo"></a>
+</header>
+
+<main>
+  <p class="eyebrow">Confluence Wiki for Claude</p>
+  <h1>Stuck with <span>Confluence?</span></h1>
+  <p class="lede">
+    Last edited in 2019 by someone who left. Three pages called “Onboarding (new) FINAL”.
+    <strong>Now Claude writes it, keeps it current and reads it for you</strong>, so nobody on your team ever has to again.
+  </p>
+  <div class="ctas">
+    <a class="cta" href="https://github.com/Myosotis-GmbH/team-wiki-plugins/releases/latest/download/team-wiki-claude.zip">Download for Claude <span aria-hidden="true">↓</span></a>
+    <a class="cta alt" href="https://github.com/Myosotis-GmbH/team-wiki-plugins/releases/latest/download/team-wiki-openai.zip">Download for Codex <span aria-hidden="true">↓</span></a>
+  </div>
+  <p class="fine">Free. Works with your existing Confluence. Your colleagues will think you finally cleaned it up.</p>
+</main>
+
+<footer>
+  © Myosotis GmbH · <a href="https://github.com/Myosotis-GmbH/team-wiki-plugins">GitHub</a>
+</footer>
+</body>
+</html>
