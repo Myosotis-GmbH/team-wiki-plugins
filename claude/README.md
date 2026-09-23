@@ -22,3 +22,7 @@ The plugin bundles the official Atlassian MCP server (`https://mcp.atlassian.com
 - "lint the wiki"
 
 Put `Confluence wiki: <root page url>` in your project's `CLAUDE.md` so every teammate's Claude finds the wiki. The conventions live on the wiki's `Wiki Schema` page in Confluence, where the team can edit them together.
+
+### claude.ai
+
+Download `confluence-wiki.zip` from the latest [release](https://github.com/Myosotis-GmbH/team-wiki-plugins/releases/latest) and upload it as a plugin. To cut a release, bump `version` in `plugin.json`, then `git tag vX.Y.Z && git push --tags`.
