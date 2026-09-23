@@ -30,6 +30,8 @@ Both plugins use the same [contract](plugins/team-wiki/skills/team-wiki/referenc
 
 Requested ingestion publishes immutable source records and supported factual additions, with review proposals for disputed or substantive human changes. Repeated ingests skip verified completed sources or resume partial work. Queries and health checks are read-only; saving an answer, publishing a report, or repairing pages requires corresponding intent. Installation creates no scheduled jobs.
 
+Any team member can review another member's proposal. Approval requires one team member who did not author or substantively revise the proposed changes; no special reviewer role or prior assignment is needed.
+
 ### claude.ai
 
 Download `team-wiki-claude.zip` from the latest [release](https://github.com/Myosotis-GmbH/team-wiki-plugins/releases/latest) and upload it as a plugin. To cut a release, set the same version in the Claude manifest and both OpenAI manifests, commit the changes, then push a matching `vX.Y.Z` tag. GitHub Actions validates and publishes both plugin archives. Run `just package` to build the archives locally.

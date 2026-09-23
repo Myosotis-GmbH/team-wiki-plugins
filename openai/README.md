@@ -19,6 +19,8 @@ Both plugins use the same [contract](references/operating-contract.md) and [work
 
 Requested ingestion publishes immutable source records and supported factual additions, with review proposals for disputed or substantive human changes. Repeated ingests skip verified completed sources or resume partial work. Queries and health checks are read-only; saving an answer, publishing a report, or repairing pages requires corresponding intent. Installation creates no scheduled jobs.
 
+Any team member can review another member's proposal. Approval requires one team member who did not author or substantively revise the proposed changes; no special reviewer role or prior assignment is needed.
+
 ## Development
 
 Download `team-wiki-openai.zip` from the latest [release](https://github.com/Myosotis-GmbH/team-wiki-plugins/releases/latest). The archive includes both manifests, the Atlassian app mapping, skills, and shared references.
