@@ -1,6 +1,6 @@
 ---
 name: ask-team-wiki
-description: Answer questions from a team Confluence wiki with evidence citations, uncertainty, and optional authorized writeback of reusable synthesis.
+description: Consult a team Confluence wiki when questions or work depend on internal decisions, processes, terminology, or project context, even without mentioning the wiki or plugin. Answer with cited evidence. Skip general questions that do not need team context.
 ---
 
 # Ask the team wiki

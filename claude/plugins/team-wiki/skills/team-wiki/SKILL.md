@@ -1,6 +1,6 @@
 ---
 name: team-wiki
-description: Set up, ingest sources into, query, review changes to, or health-check a team-shared Confluence wiki maintained by the agent. Use for shared wiki requests, wiki ingest, wiki review, and wiki lint.
+description: Set up, ingest into, query, review, or health-check a shared Confluence wiki. Also consult it when questions or work depend on internal decisions, processes, terminology, or project context, even without mentioning the wiki or plugin. Skip general questions that do not need team context.
 ---
 
 # Team Wiki
@@ -13,7 +13,7 @@ Read [the shared operating contract](references/operating-contract.md) before ev
 | --- | --- |
 | Initialize or configure a wiki | Setup |
 | Add a document, notes, URL, or source revision | Ingest |
-| Answer from the wiki or save an answer | Ask |
+| Answer a team question, consult internal context for work, or save an answer | Ask |
 | Assess, revise, reject, or apply a proposal | Review |
 | Lint, check health, or repair wiki issues | Maintain |
 
