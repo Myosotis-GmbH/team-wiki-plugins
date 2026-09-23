@@ -22,7 +22,7 @@ The plugin bundles the official Atlassian MCP server (`https://mcp.atlassian.com
 - "review this proposal"
 - "lint the wiki"
 
-Put `Confluence wiki: <root page url>` in your project's `CLAUDE.md` so every teammate's Claude finds the wiki. The conventions live on the wiki's `Wiki Rules` (or legacy `Wiki Schema`) page in Confluence, where the team can edit them together.
+Put labeled `Confluence wiki: <root page url>` pointers in your project's `CLAUDE.md`. A user may belong to multiple wikis; if the intended wiki is uncertain, the agent always asks which one to use, including for read-only tasks. The conventions live on the wiki's `Wiki Rules` (or legacy `Wiki Schema`) page in Confluence, where the team can edit them together.
 
 ### Shared with OpenAI
 

@@ -11,7 +11,7 @@ A shared Confluence wiki maintained through five skills: setup, ingest, ask, rev
 - "Review this proposal."
 - "Check wiki health."
 
-Keep `Confluence wiki: <root page URL>` in project instructions so future tasks find the same root. Team conventions live in Confluence on Wiki Rules (or legacy Wiki Schema).
+Keep labeled `Confluence wiki: <root page URL>` pointers in project instructions. A user may belong to multiple wikis; if the intended wiki is uncertain, the agent always asks which one to use, including for read-only tasks. Team conventions live in Confluence on Wiki Rules (or legacy Wiki Schema).
 
 ## Shared with Claude
 

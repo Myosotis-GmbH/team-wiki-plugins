@@ -23,6 +23,6 @@ Use the bundled `atlassian` MCP server. Discover the available resource, page, s
 
 ## Find the shared root
 
-Use an explicit user-provided root first. Otherwise look for `Confluence wiki: <url>` in `CLAUDE.md`, `CLAUDE.local.md`, or claude.ai Project instructions, then resolve and verify the binding using the contract. Ask only if the root remains missing or ambiguous. On requested setup, offer to persist the root pointer in project instructions; all team rules remain in Confluence.
+Use an explicit user-provided root first. Otherwise look for `Confluence wiki: <url>` in `CLAUDE.md`, `CLAUDE.local.md`, or claude.ai Project instructions, then resolve and verify the binding using the contract. A user may belong to multiple wikis: if there is any doubt, always ask which wiki to use before proceeding. Do not infer a default from membership or a previous task. On requested setup, offer to persist a labeled root pointer in project instructions while preserving other wiki pointers; all team rules remain in Confluence.
 
 Recognize Wiki Home/Rules and legacy Wiki Root/Schema by their actual page IDs. Ordinary questions and health checks cause no writes; requested ingest includes routine source, index, and activity writes without repeated confirmation.

@@ -1,6 +1,6 @@
 # Shared wiki workflows
 
-Read the operating contract first, then the section for the requested task. Apply the same workflow from either platform.
+Read the operating contract first, then the section for the requested task. Apply the same workflow from either platform. A user can belong to multiple wikis: whenever the target is uncertain, ask which wiki to use before proceeding with any workflow, including read-only tasks.
 
 ## Setup
 
@@ -8,7 +8,7 @@ Read the operating contract first, then the section for the requested task. Appl
 2. Read existing rules and map section/category page IDs using the contract's aliases. Reuse pages and human conventions. Initialize missing structure only as needed; create useful categories rather than empty scaffolding. Keep a running setup record and search before retrying uncertain creates.
 3. Record the binding, schema version, source conventions, review policy, and known stewards in Rules. Default to factual additions with review for disputed, policy, decision, or substantive human changes. Preserve stricter team rules. Do not change permissions implicitly.
 4. Populate Home and Index with verified links and quick-start examples: ingest a source, ask the wiki, review a proposal, check wiki health. Explain that contributors supply evidence and corrections, the agent maintains synthesis, and stewards resolve disputes. Review states are conventions, not enforced permissions.
-5. Return the root/rules URLs and any incomplete steps. Offer to save `Confluence wiki: <root URL>` in the project's instructions so future tasks find the same wiki; save it only when requested. Shared configuration stays in Confluence.
+5. Return the root/rules URLs and any incomplete steps. Offer to save `Confluence wiki: <root URL>` in the project's instructions so future tasks can find it; save it only when requested. Preserve other wiki pointers and label multiple entries clearly. A saved pointer is project context, not a user-wide default; ask which wiki to use if it does not resolve the current task unambiguously. Shared configuration stays in Confluence.
 
 ## Ingest
 
