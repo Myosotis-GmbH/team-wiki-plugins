@@ -1,9 +1,9 @@
 ---
-name: confluence-wiki
+name: team-wiki
 description: Set up, ingest sources into, query, review changes to, or health-check a team-shared Confluence wiki maintained by the agent. Use for shared wiki requests, wiki ingest, wiki review, and wiki lint.
 ---
 
-# Confluence LLM Wiki
+# Team Wiki
 
 Maintain persistent, linked, cited team knowledge in Confluence. Humans and agents share the same wiki, including teammates using the OpenAI plugin.
 

@@ -4,8 +4,8 @@
   "owner": { "name": "Lennart", "email": "ped-claude-1@myo.de" },
   "plugins": [
     {
-      "name": "confluence-wiki",
-      "source": "./plugins/confluence-wiki",
+      "name": "team-wiki",
+      "source": "./plugins/team-wiki",
       "description": "Team-shared LLM wiki (Karpathy's LLM Wiki pattern) stored in Confluence via the official Atlassian MCP server."
     }
   ]

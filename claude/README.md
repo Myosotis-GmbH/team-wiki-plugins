@@ -1,6 +1,6 @@
 # shared-wiki-plugins
 
-## confluence-wiki
+## team-wiki
 
 A team-shared [LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) that lives in Confluence. Claude ingests sources, maintains interlinked pages, answers from them and lints them. Everyone on the team works on the same wiki.
 
@@ -10,7 +10,7 @@ The plugin bundles the official Atlassian MCP server (`https://mcp.atlassian.com
 
 ```
 /plugin marketplace add <path-to-this-repo>/claude
-/plugin install confluence-wiki@shared-wiki-plugins
+/plugin install team-wiki@shared-wiki-plugins
 /mcp            # authenticate "atlassian"
 ```
 
@@ -26,7 +26,7 @@ Put `Confluence wiki: <root page url>` in your project's `CLAUDE.md` so every te
 
 ### Shared with OpenAI
 
-Both plugins use the same [contract](plugins/confluence-wiki/skills/confluence-wiki/references/operating-contract.md) and [workflows](plugins/confluence-wiki/skills/confluence-wiki/references/workflows.md). A wiki can occupy an existing or dedicated space. Existing Wiki Root/Schema/Index/Log pages and category layouts are reused by ID; setup does not rename or duplicate them.
+Both plugins use the same [contract](plugins/team-wiki/skills/team-wiki/references/operating-contract.md) and [workflows](plugins/team-wiki/skills/team-wiki/references/workflows.md). A wiki can occupy an existing or dedicated space. Existing Wiki Root/Schema/Index/Log pages and category layouts are reused by ID; setup does not rename or duplicate them.
 
 Requested ingestion publishes immutable source records and supported factual additions, with review proposals for disputed or substantive human changes. Repeated ingests skip verified completed sources or resume partial work. Queries and health checks are read-only; saving an answer, publishing a report, or repairing pages requires corresponding intent. Installation creates no scheduled jobs.
 
