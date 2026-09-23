@@ -32,7 +32,7 @@ Requested ingestion publishes immutable source records and supported factual add
 
 ### claude.ai
 
-Download `confluence-wiki.zip` from the latest [release](https://github.com/Myosotis-GmbH/team-wiki-plugins/releases/latest) and upload it as a plugin. To cut a release, synchronize `version` in the Claude manifest and both OpenAI manifests, then `git tag vX.Y.Z && git push --tags`.
+Download `team-wiki-claude.zip` from the latest [release](https://github.com/Myosotis-GmbH/team-wiki-plugins/releases/latest) and upload it as a plugin. To cut a release, set the same version in the Claude manifest and both OpenAI manifests, commit the changes, then push a matching `vX.Y.Z` tag. GitHub Actions validates and publishes both plugin archives. Run `just package` to build the archives locally.
 
 ### Development
 

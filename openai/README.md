@@ -21,4 +21,8 @@ Requested ingestion publishes immutable source records and supported factual add
 
 ## Development
 
+Download `team-wiki-openai.zip` from the latest [release](https://github.com/Myosotis-GmbH/team-wiki-plugins/releases/latest). The archive includes both manifests, the Atlassian app mapping, skills, and shared references.
+
+To cut a release, set the same version in both OpenAI manifests and the Claude manifest, commit the changes, then push a matching `vX.Y.Z` tag. GitHub Actions validates and publishes both plugin archives. Run `just package` to build the archives locally.
+
 From the repository root, install the pinned tool with `mise install`, then run `just check`. Keep both packaged copies of the shared contract and workflows identical; the check detects drift and inconsistent manifest metadata. The root `plugin.json` and `.codex-plugin/plugin.json` retain the same identity and version.
