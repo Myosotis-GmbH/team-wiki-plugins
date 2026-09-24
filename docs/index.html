@@ -41,7 +41,7 @@
   .fine { margin: 1rem 0 0; font-size: .85rem; color: var(--muted); }
   .setup { margin-top: 3rem; line-height: 1.6; }
   .setup h2 { margin: 0 0 .75rem; }
-  .setup a { color: var(--ink); text-underline-offset: .2em; }
+  .setup a { color: var(--ink); text-underline-offset: .2em; overflow-wrap: anywhere; }
   footer { padding-block: 1.5rem; font-size: .85rem; color: var(--muted); }
   footer a { color: inherit; }
 </style>
@@ -66,8 +66,9 @@
 
   <section class="setup" aria-labelledby="setup-heading">
     <h2 id="setup-heading">Get started</h2>
-    <p id="claude-setup"><strong>Claude:</strong> Customize → Plugins → Add marketplace → Add from a repository → Sync → Install Team Wiki → Connect Atlassian</p>
-    <p id="chatgpt-setup"><strong id="codex-setup">ChatGPT/Codex:</strong> Add marketplace (<a href="https://learn.chatgpt.com/docs/enterprise/plugin-management">admin import on web</a>) → Source: Myosotis-GmbH/team-wiki-plugins → Install Team Wiki → Connect Atlassian → New chat</p>
+    <p id="claude-setup"><strong>Claude:</strong> Customize → Plugins → Add marketplace → Add from a repository</p>
+    <p id="chatgpt-setup"><strong id="codex-setup">ChatGPT/Codex:</strong> Plugins → Add → Add a marketplace (<a href="https://learn.chatgpt.com/docs/enterprise/plugin-management">admin import on web</a>)</p>
+    <p><strong>.. then</strong> paste <a href="https://github.com/Myosotis-GmbH/team-wiki-plugins">Myosotis-GmbH/team-wiki-plugins</a> → Install Team Wiki → Connect Atlassian</p>
     <p class="fine">Requires plugin support and Confluence access; editing pages requires edit permission.</p>
   </section>
 </main>
