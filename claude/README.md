@@ -8,11 +8,17 @@ The plugin bundles the official Atlassian MCP server (`https://mcp.atlassian.com
 
 ### Install
 
+In Claude's **Add marketplace** dialog, choose **Add from a repository** and enter `Myosotis-GmbH/team-wiki-plugins`. Sync the marketplace, then install **team-wiki** from **shared-wiki-plugins** and authenticate Atlassian when prompted.
+
+In Claude Code:
+
 ```
-/plugin marketplace add <path-to-this-repo>/claude
+/plugin marketplace add Myosotis-GmbH/team-wiki-plugins
 /plugin install team-wiki@shared-wiki-plugins
 /mcp            # authenticate "atlassian"
 ```
+
+For local development, `/plugin marketplace add <path-to-this-repo>` uses the root catalog. The existing `<path-to-this-repo>/claude` source also remains supported.
 
 ### Use
 

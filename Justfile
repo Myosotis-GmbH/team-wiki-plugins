@@ -12,6 +12,8 @@ check: (_cmd "jq")
     @jq -e -s '.[0].extensions["com.openai"] == (.[1] | {interface, apps})' openai/plugin.json openai/.codex-plugin/plugin.json >/dev/null
     @jq -e -s 'map(.version) | unique | length == 1' openai/plugin.json openai/.codex-plugin/plugin.json claude/plugins/team-wiki/.claude-plugin/plugin.json >/dev/null
     @jq -e 'type == "object"' openai/.app.json claude/.claude-plugin/marketplace.json claude/plugins/team-wiki/.mcp.json >/dev/null
+    @jq -e -s '.[0] == (.[1] | .plugins[0].source = "./claude/plugins/team-wiki")' .claude-plugin/marketplace.json claude/.claude-plugin/marketplace.json >/dev/null
+    @jq -e --slurpfile plugin claude/plugins/team-wiki/.claude-plugin/plugin.json '.plugins[0].name == $plugin[0].name' .claude-plugin/marketplace.json >/dev/null
     @jq -e --slurpfile plugin openai/.codex-plugin/plugin.json '.name == "team-wiki-plugins" and .interface.displayName == "Team Wiki Plugins" and (.plugins | length == 1) and .plugins[0] == {name: $plugin[0].name, source: {source: "local", path: "./openai"}, policy: {installation: "AVAILABLE", authentication: "ON_INSTALL"}, category: $plugin[0].interface.category}' .agents/plugins/marketplace.json >/dev/null
     @git diff --check
 
